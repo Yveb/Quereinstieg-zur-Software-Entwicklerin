@@ -1,0 +1,59 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif, arial; /*Schriftart*/
+    color: rgb(0, 0, 0);
+ }
+  /*Navigation ul Eigenschaften*/
+ .navul{                
+     background-color: rgb(224, 159, 36);
+     font-weight: 400;
+     display: inline-block;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.03s, transform 0.02s;
+     padding: 15px;
+     margin:0 20 0 0;
+     display: flex;
+     gap: 10px;
+     justify-content: space-around;
+        }
+
+     /*durch flex individuelle Größen für Boxen*/
+     .navul li {
+        flex-shrink: 0; /*damit die Boxen nicht kleiner werden*/
+        flex-grow: 1; /*damit die Boxen nicht größer werden*/
+        flex-basis: 0px; /*Größe der Boxen*/
+    }
+    .navul li.Start {
+        flex-basis: 60px;
+    }
+    .navul li.Übermich {	
+        flex-basis: 40px;
+    }
+    .navul li.Blog {
+        flex-basis: 60px;
+    }
+    .navul li.Kontakt {
+        flex-basis: 40px;
+    }
+        /*Navigation ul Eigenschaften beim Hover, wird seperat gesetzt*/
+        .navul:hover {
+            background-color: rgb(255, 207, 118);
+            transform: scale(1.1);}  
+    
+   
+
+
+ .texteinleitung1 {
+     font-size: 20px;
+     font-weight: 400;
+     font-style: oblique;
+ }
+ .texteinleitung2 {
+     font-size: 20px;
+     font-weight: 400;
+     font-style: oblique;
+     color: rgb(0, 0, 0);
+ }
+ img {
+     border-radius: 50%;
+ }
